@@ -1,0 +1,60 @@
+@import "../../styles/color";
+@import "../../styles/mixins/transition";
+
+._ooneex-checkbox {
+  display: inline-block;
+  cursor: pointer;
+
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .icon {
+    border: 2px solid $color-primary;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 17px;
+
+    i {
+      font-size: 12px;
+      transform: scale(0);
+      @include transition();
+    }
+  }
+
+  .label {
+    font-size: 1em;
+    padding-left: 10px;
+    color: $color-primary;
+  }
+
+  &.secondary {
+    .icon {
+      border: 2px solid $color-secondary;
+    }
+    .label {
+      color: $color-secondary;
+    }
+  }
+
+  &.disabled {
+    cursor: default;
+    .icon {
+      border: 2px solid $color-disabled;
+    }
+    .label {
+      color: $color-disabled;
+    }
+  }
+
+  &.checked {
+    .icon {
+      i {
+        transform: scale(1);
+      }
+    }
+  }
+}

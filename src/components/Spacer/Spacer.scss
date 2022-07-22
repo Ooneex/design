@@ -1,0 +1,46 @@
+._ooneex-spacer {
+  display: block;
+
+  &.block {
+    &.xs {
+      height: 5px;
+    }
+    &.sm {
+      height: 15px;
+    }
+    &.md {
+      height: 30px;
+    }
+    &.lg {
+      height: 45px;
+    }
+    &.xlg {
+      height: 60px;
+    }
+    &.xxlg {
+      height: 75px;
+    }
+  }
+
+  &.inline {
+    display: inline-block;
+    &.xs {
+      width: 5px;
+    }
+    &.sm {
+      width: 15px;
+    }
+    &.md {
+      width: 30px;
+    }
+    &.lg {
+      width: 45px;
+    }
+    &.xlg {
+      width: 60px;
+    }
+    &.xxlg {
+      width: 75px;
+    }
+  }
+}

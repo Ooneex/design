@@ -1,0 +1,35 @@
+@import "color";
+@import "breakpoint";
+
+._text-left { text-align: left}
+._text-center { text-align: center}
+._text-right { text-align: right}
+._bold { font-weight: bolder}
+._italic { font-style: italic}
+._underline { text-decoration: underline}
+
+// Responsive
+
+$count: length($breakpoints);
+
+@for $i from 1 through  $count{
+
+  @if $i % 2 != 0 {
+
+    $breakpoint: nth($breakpoints, $i);
+    $breakpoint-value: nth($breakpoints, $i + 1);
+
+    @media screen and (min-width: #{$breakpoint-value}) {
+
+      ._#{$breakpoint}-text-left { text-align: left}
+      ._#{$breakpoint}-text-center { text-align: center}
+      ._#{$breakpoint}-text-right { text-align: right}
+      ._#{$breakpoint}-bold { font-weight: bolder}
+      ._#{$breakpoint}-italic { font-style: italic}
+      ._#{$breakpoint}-underline { text-decoration: underline}
+
+    }
+
+  }
+
+}

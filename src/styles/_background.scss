@@ -1,0 +1,39 @@
+@import "color";
+@import "breakpoint";
+
+$c: length($colors);
+@for $i from 1 through $c {
+  @if $i % 2 != 0 {
+    $color: nth($colors, $i);
+    $color-value: nth($colors, $i + 1);
+    ._bg-c-#{$color} { background-color: #{$color-value}}
+  }
+}
+
+// Responsive
+
+$count: length($breakpoints);
+
+@for $i from 1 through  $count{
+
+  @if $i % 2 != 0 {
+
+    $breakpoint: nth($breakpoints, $i);
+    $breakpoint-value: nth($breakpoints, $i + 1);
+
+    @media screen and (min-width: #{$breakpoint-value}) {
+
+      $c: length($colors);
+      @for $i from 1 through $c {
+        @if $i % 2 != 0 {
+          $color: nth($colors, $i);
+          $color-value: nth($colors, $i + 1);
+          ._#{$breakpoint}-bg-c-#{$color} { background-color: #{$color-value}}
+        }
+      }
+
+    }
+
+  }
+
+}

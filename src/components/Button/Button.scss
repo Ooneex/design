@@ -1,0 +1,76 @@
+@import "../../styles/color";
+@import "../../styles/mixins/transition";
+
+._ooneex-button {
+  border: none;
+  outline: none;
+  background-color: $color-primary;
+  padding: 0 20px;
+  min-height: 45px;
+  color: $color-white;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: inline-block;
+  @include transition();
+
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  i {
+    font-size: 18px !important;
+    color: $color-white !important;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: $color-primary-alt;
+  }
+
+  &.outline {
+    background-color: $color-white;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  &.secondary {
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: #855D43;
+    }
+
+    &.outline {
+      background-color: $color-white;
+      border: 2px solid $color-secondary;
+      color: $color-secondary;
+
+      &:hover {
+        background-color: $color-secondary;
+        color: $color-white;
+      }
+    }
+  }
+
+  &:disabled {
+    border: none;
+    color: $color-white;
+    background-color: $color-disabled;
+    cursor: default;
+
+    &:hover {
+      background-color: $color-disabled;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+@import "../../styles/color";
+@import "../../styles/mixins/transition";
+@import "../../styles/mixins/border-radius";
+
+._ooneex-input {
+  display: block;
+
+  .label {
+    display: block;
+    cursor: pointer;
+    font-size: 1em;
+    padding-left: 0;
+    margin-bottom: 5px;
+    color: $color-primary;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+    .icon {
+      height: 47px;
+      cursor: pointer;
+      width: 60px;
+      text-align: center;
+      background-color: $color-primary;
+      line-height: 56px;
+    }
+
+    .element {
+      display: block;
+      color: $color-primary;
+      font-size: 1.1em;
+      padding: 5px 15px;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: $color-white;
+      border: 2px solid $color-disabled;
+      @include transition();
+      @include border-radius(0, 0, 0, 0);
+
+      &:disabled, &[readonly] {
+        background-color: darken($color-white, 10%);
+        color: $color-disabled;
+        cursor: not-allowed;
+      }
+
+      &::-webkit-input-placeholder {
+        font-size: 0.9em;
+        color: $color-disabled;
+        font-style: italic;
+      }
+
+      &:-ms-input-placeholder {
+        font-size: 0.9em;
+        color: $color-disabled;
+        font-style: italic;
+      }
+
+      &::-moz-placeholder,
+      &:-moz-placeholder {
+        font-size: 0.9em;
+        color: $color-disabled;
+        font-style: italic;
+      }
+
+      &:focus {
+        outline: none;
+        border: 2px solid $color-primary;
+      }
+      &.no-border-left {
+        border-left: 0;
+      }
+    }
+  }
+
+  .error {
+    width: 100%;
+    margin-top: 2px;
+    font-size: 0.9em;
+    color: $color-error;
+  }
+}

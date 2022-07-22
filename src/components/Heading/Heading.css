@@ -1,0 +1,44 @@
+._ooneex-heading {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  color: #55295E;
+  font-size: 2.5em;
+}
+._ooneex-heading .wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+._ooneex-heading.secondary {
+  color: #AB7F58;
+}
+._ooneex-heading.white {
+  color: #FFFFFF;
+}
+._ooneex-heading.sm {
+  font-size: 1.5em;
+}
+._ooneex-heading.sm svg {
+  transform: scale(0.5);
+}
+._ooneex-heading.md {
+  font-size: 2em;
+}
+._ooneex-heading.md svg {
+  transform: scale(0.7);
+}
+._ooneex-heading.lg {
+  font-size: 2.7em;
+}
+._ooneex-heading.lg svg {
+  transform: scale(0.9);
+}
+._ooneex-heading.xlg {
+  font-size: 3em;
+}
+._ooneex-heading.xlg svg {
+  transform: scale(1);
+}
+
+/*# sourceMappingURL=Heading.css.map */

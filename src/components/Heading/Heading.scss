@@ -1,0 +1,47 @@
+@import "../../styles/color";
+
+._ooneex-heading {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  color: $color-primary;
+
+  .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  &.secondary {
+    color: $color-secondary;
+  }
+  &.white {
+    color: $color-white;
+  }
+  font-size: 2.5em;
+
+  &.sm {
+    font-size: 1.5em;
+    svg {
+      transform: scale(0.5);
+    }
+  }
+  &.md {
+    font-size: 2em;
+    svg {
+      transform: scale(0.7);
+    }
+  }
+  &.lg {
+    font-size: 2.7em;
+    svg {
+      transform: scale(0.9);
+    }
+  }
+  &.xlg {
+    font-size: 3em;
+    svg {
+      transform: scale(1);
+    }
+  }
+}

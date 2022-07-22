@@ -1,0 +1,67 @@
+._ooneex-button {
+  border: none;
+  outline: none;
+  background-color: #55295E;
+  padding: 0 20px;
+  min-height: 45px;
+  color: #FFFFFF;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+._ooneex-button .wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+._ooneex-button i {
+  font-size: 18px !important;
+  color: #FFFFFF !important;
+}
+._ooneex-button .text {
+  width: 100%;
+  text-align: center;
+}
+._ooneex-button:hover {
+  background-color: #3C1C42;
+}
+._ooneex-button.outline {
+  background-color: #FFFFFF;
+  border: 2px solid #55295E;
+  color: #55295E;
+}
+._ooneex-button.outline:hover {
+  background-color: #55295E;
+  color: #FFFFFF;
+}
+._ooneex-button.secondary {
+  background-color: #AB7F58;
+}
+._ooneex-button.secondary:hover {
+  background-color: #855D43;
+}
+._ooneex-button.secondary.outline {
+  background-color: #FFFFFF;
+  border: 2px solid #AB7F58;
+  color: #AB7F58;
+}
+._ooneex-button.secondary.outline:hover {
+  background-color: #AB7F58;
+  color: #FFFFFF;
+}
+._ooneex-button:disabled {
+  border: none;
+  color: #FFFFFF;
+  background-color: #90909E;
+  cursor: default;
+}
+._ooneex-button:disabled:hover {
+  background-color: #90909E;
+}
+
+/*# sourceMappingURL=Button.css.map */

@@ -1,0 +1,19 @@
+@import "variables";
+
+$f: length($fonts);
+
+@for $i from 1 through $f {
+
+  @if $i % 2 != 0 {
+
+    $font: nth($fonts, $i);
+    $font-value: nth($fonts, $i + 1);
+
+    @font-face {
+      font-family: $font;
+      src: url($font-value) format("truetype");
+    }
+
+  }
+
+}

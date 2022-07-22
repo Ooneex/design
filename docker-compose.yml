@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  ooneex-design:
+    build: ./
+    image: ooneex/design
+    container_name: ooneex-design
+    working_dir: /ooneex/design
+    volumes:
+      - ./src:/ooneex/design

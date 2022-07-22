@@ -1,0 +1,39 @@
+@import "../../styles/color";
+@import "../../styles/mixins/border-radius";
+
+._ooneex-logo {
+
+  &.primary {
+    rect {
+      fill: $color-primary;
+    }
+  }
+
+  &.round {
+    @include border-radius(50%, 50%, 50%, 50%);
+  }
+
+  &.fit {
+    @include border-radius(0, 0, 0, 0);
+  }
+
+  &.xs {
+    width: 20%;
+  }
+
+  &.sm {
+    width: 30%;
+  }
+
+  &.md {
+    width: 40%;
+  }
+
+  &.lg {
+    width: 50%;
+  }
+
+  &.xlg {
+    width: 60%;
+  }
+}

@@ -1,0 +1,35 @@
+._ooneex-font-icon {
+  color: #55295E;
+}
+._ooneex-font-icon.primary {
+  color: #55295E;
+}
+._ooneex-font-icon.secondary {
+  color: #AB7F58;
+}
+._ooneex-font-icon.white {
+  color: #FFFFFF;
+}
+._ooneex-font-icon.disabled {
+  color: #90909E;
+}
+._ooneex-font-icon.xs {
+  font-size: 18px;
+}
+._ooneex-font-icon.sm {
+  font-size: 20px;
+}
+._ooneex-font-icon.md {
+  font-size: 25px;
+}
+._ooneex-font-icon.normal {
+  font-size: 30px;
+}
+._ooneex-font-icon.lg {
+  font-size: 40px;
+}
+._ooneex-font-icon.xlg {
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=Icon.css.map */

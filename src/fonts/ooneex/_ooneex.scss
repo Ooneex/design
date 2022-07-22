@@ -1,0 +1,192 @@
+/* --------------------------------
+
+ooneex Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+$_ooneex-font-icon-font-path: "." !default;
+
+@font-face {
+  font-family: 'ooneex';
+  src: url('#{$_ooneex-font-icon-font-path}/ooneex.eot');
+  src: url('#{$_ooneex-font-icon-font-path}/ooneex.eot') format('embedded-opentype'),
+    url('#{$_ooneex-font-icon-font-path}/ooneex.woff2') format('woff2'),
+    url('#{$_ooneex-font-icon-font-path}/ooneex.woff') format('woff'),
+    url('#{$_ooneex-font-icon-font-path}/ooneex.ttf') format('truetype'),
+    url('#{$_ooneex-font-icon-font-path}/ooneex.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+._ooneex-font-icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'ooneex';
+  color: inherit;
+  flex-shrink: 0;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+._ooneex-font-icon-is-spinning {
+  animation: _ooneex-font-icon-spin 1s infinite linear;
+}
+
+@keyframes _ooneex-font-icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+
+._ooneex-font-icon-rotate-90  {
+	transform: rotate(90deg);
+}
+
+._ooneex-font-icon-rotate-180 {
+	transform: rotate(180deg);
+}
+
+._ooneex-font-icon-rotate-270 {
+	transform: rotate(270deg);
+}
+
+._ooneex-font-icon-flip-y {
+	transform: scaleY(-1);
+}
+._ooneex-font-icon-flip-x {
+	transform: scaleX(-1);
+}
+
+/*------------------------
+	icons
+-------------------------*/
+$icons: (
+        heart-empty: 'ea02',
+        heart: 'ea03',
+        control-panel: 'ea04',
+        calendar: 'ea05',
+        mortgage: 'ea06',
+        security: 'ea07',
+        cheque: 'ea08',
+        bell: 'ea0b',
+        comments: 'ea0c',
+        chat: 'ea0d',
+        contactless-card: 'ea0e',
+        pen: 'ea0f',
+        trash: 'ea10',
+        phone: 'ea11',
+        mail: 'ea12',
+        user-alt: 'ea13',
+        user: 'ea14',
+        pin: 'ea15',
+        search: 'ea16',
+        star: 'ea17',
+        lock: 'ea18',
+        check: 'ea19',
+        edit-curves-alt: 'ea1a',
+        edit-curves: 'ea1b',
+        check-list-alt: 'ea1d',
+        survey: 'ea1e',
+        setup-preferences: 'ea20',
+        system-preferences: 'ea21',
+        hash-mark: 'ea22',
+        list-numbers: 'ea23',
+        microsoft: 'ea24',
+        recipe: 'ea25',
+        gallery-view: 'ea26',
+        contacts: 'ea27',
+        check-list: 'ea29',
+        bullet-list: 'ea2b',
+        menu: 'ea2c',
+        incense: 'ea2d',
+        scented-candle-1: 'ea2e',
+        scented-candle: 'ea2f',
+        missile: 'ea30',
+        offline: 'ea31',
+        copyright: 'ea32',
+        at-sign: 'ea33',
+        shield: 'ea34',
+        verified: 'ea35',
+        password: 'ea36',
+        plug: 'ea37',
+        taoism: 'ea38',
+        note: 'ea39',
+        mobile-chat: 'ea3c',
+        property-location: 'ea3d',
+        property-to-rent: 'ea3e',
+        property-for-sale: 'ea3f',
+        property-sold: 'ea40',
+        bookmarks: 'ea41',
+        energy: 'ea42',
+        recipe-create: 'ea44',
+        dish: 'ea45',
+        cutlery: 'ea46',
+        parking: 'ea47',
+        engine-start: 'ea48',
+        comment-add: 'ea49',
+        enlarge: 'ea56',
+        increase: 'ea57',
+        selfie: 'ea59',
+        arrow-alt-up: 'ea5a',
+        arrow-alt-right: 'ea5b',
+        arrow-alt-left: 'ea5c',
+        arrow-alt-down: 'ea5d',
+        arrow-up: 'ea5e',
+        arrow-right: 'ea5f',
+        arrow-left: 'ea60',
+        arrow-down: 'ea61',
+        eye: 'ea62',
+        eye-off: 'ea63',
+        block: 'ea78',
+        circle: 'ea79',
+        circle-alt: 'ea7a',
+        clock: 'ea7b',
+        currency-dollar: 'ea7c',
+        euro: 'ea7d',
+        temple: 'ea7e',
+        shirt: 'ea7f',
+        photo-size-select-small: 'ea80',
+        bed: 'ea81',
+        cctv: 'ea82',
+        wifi: 'ea83',
+        ventilation: 'ea84',
+        heater: 'ea85',
+        washing-machine: 'ea86',
+        dishwasher: 'ea87',
+        car-parking: 'ea88',
+        sofa: 'ea89',
+        desk-lamp: 'ea8a',
+        lift: 'ea8b',
+        video-player: 'ea8c',
+        shuttle: 'ea8d',
+        train-speed: 'ea8e',
+        train: 'ea8f',
+        bus-front: 'ea90',
+);
+
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+@each $name, $code in $icons {
+  ._icon-#{"" +$name}::before {
+    content: unicode($code);
+  }
+}

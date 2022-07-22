@@ -1,0 +1,39 @@
+// Colors
+$color-primary: #55295E;
+$color-primary-alt: #3C1C42;
+$color-secondary: #AB7F58;
+$color-secondary-alt: #855D43;
+$color-tertiary: #103C3B;
+$color-text: #000118;
+$color-disabled: #90909E;
+$color-white: #FFFFFF;
+
+// Colors by domain
+$apartment-color: #005555;
+$owner-color: #4D4C7D;
+$event-color: #005086;
+$invoice-color: #4E5C79;
+$insurance-color: #8B5E83;
+
+// Page
+$page-background-color: #E5E5E5;
+
+// Notification colors
+$color-success: #007E33;
+$color-warning: #FF8800;
+$color-info: #0099CC;
+$color-error: #CC0000;
+
+$colors:
+        primary $color-primary
+        primary-alt $color-primary-alt
+        secondary $color-secondary
+        secondary-alt $color-secondary-alt
+        tertiary $color-tertiary
+        'text' $color-text
+        'disabled' $color-disabled
+        'white' $color-white
+        success $color-success
+        error $color-error
+        info $color-info
+        warning $color-warning;

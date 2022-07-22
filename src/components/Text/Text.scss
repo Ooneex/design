@@ -1,0 +1,40 @@
+@import "../../styles/color";
+
+._ooneex-text {
+  margin: 0;
+  padding: 0;
+
+  color: $color-text;
+
+  &.primary {
+    color: $color-primary;
+  }
+
+  &.secondary {
+    color: $color-secondary;
+  }
+
+  &.xs {
+    font-size: 0.85em;
+  }
+
+  &.sm {
+    font-size: 0.9em;
+  }
+
+  &.md {
+    font-size: 0.95em;
+  }
+
+  &.normal {
+    font-size: 1em;
+  }
+
+  &.lg {
+    font-size: 1.1em;
+  }
+
+  &.xlg {
+    font-size: 1.3em;
+  }
+}

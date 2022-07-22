@@ -1,0 +1,30 @@
+._ooneex-logo.primary rect {
+  fill: #55295E;
+}
+._ooneex-logo.round {
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+}
+._ooneex-logo.fit {
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+}
+._ooneex-logo.xs {
+  width: 20%;
+}
+._ooneex-logo.sm {
+  width: 30%;
+}
+._ooneex-logo.md {
+  width: 40%;
+}
+._ooneex-logo.lg {
+  width: 50%;
+}
+._ooneex-logo.xlg {
+  width: 60%;
+}
+
+/*# sourceMappingURL=Logo.css.map */

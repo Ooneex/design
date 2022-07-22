@@ -1,0 +1,29 @@
+@import "color";
+@import "breakpoint";
+
+._relative{ position: relative}
+._absolute{ position: absolute}
+._fixed{ position: fixed}
+
+// Responsive
+
+$count: length($breakpoints);
+
+@for $i from 1 through  $count{
+
+  @if $i % 2 != 0 {
+
+    $breakpoint: nth($breakpoints, $i);
+    $breakpoint-value: nth($breakpoints, $i + 1);
+
+    @media screen and (min-width: #{$breakpoint-value}) {
+
+      ._#{$breakpoint}-relative{ position: relative}
+      ._#{$breakpoint}-absolute{ position: absolute}
+      ._#{$breakpoint}-fixed{ position: fixed}
+
+    }
+
+  }
+
+}

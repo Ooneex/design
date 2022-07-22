@@ -1,0 +1,100 @@
+@import "color";
+@import "breakpoint";
+@import "../fonts/font";
+
+$font-max-size: 100;
+
+@for $i from 8 through $font-max-size {
+    ._f-s-#{$i} {font-size: #{$i}px}
+}
+
+$c: length($colors);
+
+@for $i from 1 through $c {
+
+    @if $i % 2 != 0 {
+
+        $color: nth($colors, $i);
+        $color-value: nth($colors, $i + 1);
+
+        ._f-c-#{$color} {
+            color: #{$color-value}
+        }
+
+    }
+
+}
+
+._f-f {
+    font-family: "open-sans", sans-serif;
+}
+._f-f-italic {
+    font-family: "open-sans-italic", sans-serif;
+}
+._f-f-semi-bold {
+    font-family: "open-sans-semi-bold", sans-serif;
+}
+._f-f-semi-bold-italic {
+    font-family: "open-sans-semi-bold-italic", sans-serif;
+}
+._f-f-bold {
+    font-family: "open-sans-bold", sans-serif;
+}
+._f-f-bold-italic {
+    font-family: "open-sans-bold-italic", sans-serif;
+}
+._f-f-light {
+    font-family: "open-sans-light", sans-serif;
+}
+._f-f-light-italic {
+    font-family: "open-sans-light-italic", sans-serif;
+}
+
+._f-f-extra-bold {
+    font-family: "open-sans-extra-bold", sans-serif;
+}
+._f-f-extra-bold-italic {
+    font-family: "open-sans-extra-bold-italic", sans-serif;
+}
+
+// Responsive
+
+$count: length($breakpoints);
+
+@for $i from 1 through $count {
+
+    @if $i % 2 != 0 {
+
+        $breakpoint: nth($breakpoints, $i);
+        $breakpoint-value: nth($breakpoints, $i + 1);
+
+        @media screen and (min-width: #{$breakpoint-value}) {
+
+            @for $i from 8 through $font-max-size {
+                ._#{$breakpoint}-f-s-#{$i} {
+                    font-size: #{$i}px
+                }
+            }
+
+            $c: length($colors);
+
+            @for $i from 1 through $c {
+
+                @if $i % 2 != 0 {
+
+                    $color: nth($colors, $i);
+                    $color-value: nth($colors, $i + 1);
+
+                    ._#{$breakpoint}-f-c-#{$color} {
+                        color: #{$color-value}
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

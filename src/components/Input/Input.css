@@ -1,0 +1,77 @@
+._ooneex-input {
+  display: block;
+}
+._ooneex-input .label {
+  display: block;
+  cursor: pointer;
+  font-size: 1em;
+  padding-left: 0;
+  margin-bottom: 5px;
+  color: #55295E;
+}
+._ooneex-input .wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+._ooneex-input .wrapper .icon {
+  height: 47px;
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+  background-color: #55295E;
+  line-height: 56px;
+}
+._ooneex-input .wrapper .element {
+  display: block;
+  color: #55295E;
+  font-size: 1.1em;
+  padding: 5px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border: 2px solid #90909E;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-border-radius: 0 0 0 0;
+  -moz-border-radius: 0 0 0 0;
+  border-radius: 0 0 0 0;
+}
+._ooneex-input .wrapper .element:disabled, ._ooneex-input .wrapper .element[readonly] {
+  background-color: #e6e6e6;
+  color: #90909E;
+  cursor: not-allowed;
+}
+._ooneex-input .wrapper .element::-webkit-input-placeholder {
+  font-size: 0.9em;
+  color: #90909E;
+  font-style: italic;
+}
+._ooneex-input .wrapper .element:-ms-input-placeholder {
+  font-size: 0.9em;
+  color: #90909E;
+  font-style: italic;
+}
+._ooneex-input .wrapper .element::-moz-placeholder, ._ooneex-input .wrapper .element:-moz-placeholder {
+  font-size: 0.9em;
+  color: #90909E;
+  font-style: italic;
+}
+._ooneex-input .wrapper .element:focus {
+  outline: none;
+  border: 2px solid #55295E;
+}
+._ooneex-input .wrapper .element.no-border-left {
+  border-left: 0;
+}
+._ooneex-input .error {
+  width: 100%;
+  margin-top: 2px;
+  font-size: 0.9em;
+  color: #CC0000;
+}
+
+/*# sourceMappingURL=Input.css.map */

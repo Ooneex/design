@@ -1,0 +1,58 @@
+@import "../variables";
+
+@mixin border-rotating(
+  $time: $transition-time,
+  $color-1: #33cccc,
+  $color-2: #2980b9,
+  $color-3: #ffbf55,
+  $color-4: #c62766,
+  $color-5: #33cccc,
+){
+
+  @-webkit-keyframes border-rotating {
+    0% {
+      transform: rotate(0deg);
+      border-top-color: $color-1;
+    }
+    25%{
+      border-top-color: $color-2;
+    }
+    50% {
+      border-top-color: $color-3;
+    }
+    75% {
+      border-top-color: $color-4;
+    }
+    100% {
+      transform: rotate(360deg);
+      border-top-color: $color-5;
+    }
+  }
+
+  @keyframes border-rotating {
+    0% {
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      border-top-color: $color-1;
+    }
+    25%{
+      border-top-color: $color-2;
+    }
+    50% {
+      border-top-color: $color-3;
+    }
+    75% {
+      border-top-color: $color-4;
+    }
+    100% {
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+      border-top-color: $color-5;
+    }
+  }
+
+  -webkit-animation: border-rotating $time linear infinite;
+  -moz-animation: border-rotating $time linear infinite;
+  -o-animation: border-rotating $time linear infinite;
+  animation: border-rotating $time linear infinite;
+}

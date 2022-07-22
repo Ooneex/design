@@ -1,0 +1,46 @@
+@import "../../styles/color";
+
+._ooneex-font-icon {
+
+  color: $color-primary;
+
+  &.primary {
+    color: $color-primary;
+  }
+
+  &.secondary {
+    color: $color-secondary;
+  }
+
+  &.white {
+    color: $color-white;
+  }
+
+  &.disabled {
+    color: $color-disabled;
+  }
+
+  &.xs {
+    font-size: 18px;
+  }
+
+  &.sm {
+    font-size: 20px;
+  }
+
+  &.md {
+    font-size: 25px;
+  }
+
+  &.normal {
+    font-size: 30px;
+  }
+
+  &.lg {
+    font-size: 40px;
+  }
+
+  &.xlg {
+    font-size: 50px;
+  }
+}

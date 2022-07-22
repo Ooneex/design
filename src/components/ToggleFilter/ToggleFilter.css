@@ -1,0 +1,21 @@
+._ooneex-toggle-filter {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+._ooneex-toggle-filter .item {
+  margin: 0;
+  min-width: 100px;
+  border-left: none;
+}
+._ooneex-toggle-filter .item:first-child {
+  border-left: 2px solid #55295E;
+}
+._ooneex-toggle-filter .item.active {
+  cursor: default;
+}
+._ooneex-toggle-filter .item.active:hover {
+  background-color: #55295E;
+}
+
+/*# sourceMappingURL=ToggleFilter.css.map */

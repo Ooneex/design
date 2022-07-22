@@ -1,0 +1,23 @@
+@import "../variables";
+
+@mixin spin($time: $transition-time){
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  -webkit-animation: spin $time linear infinite;
+  -moz-animation: spin $time linear infinite;
+  -o-animation: spin $time linear infinite;
+  animation: spin $time linear infinite;
+}

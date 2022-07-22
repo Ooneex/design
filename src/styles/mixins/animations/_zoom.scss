@@ -1,0 +1,17 @@
+@import "../variables";
+
+@mixin zoom($time: $transition-time){
+  @keyframes zoom {
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  -webkit-animation: zoom $time linear;
+  -moz-animation: zoom $time linear;
+  -o-animation: zoom $time linear;
+  animation: zoom $time linear;
+}
