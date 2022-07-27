@@ -1,0 +1,15 @@
+@import "./mixins/animations/zoom";
+@import "./mixins/animations/spin";
+@import "./mixins/animations/border-rotating";
+
+._animation-zoom {
+  @include zoom();
+}
+
+._animation-spin {
+  @include spin();
+}
+
+._animation-border-rotating {
+  @include border-rotating();
+}

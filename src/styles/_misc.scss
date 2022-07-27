@@ -1,8 +1,5 @@
-@import "../mixins/shadow";
-@import "../mixins/transition";
-@import "../mixins/animations/zoom";
-@import "../mixins/animations/spin";
-@import "../mixins/animations/border-rotating";
+@import "./mixins/shadow";
+@import "./mixins/transition";
 
 ._transition {
   @include transition();
@@ -10,16 +7,4 @@
 
 ._shadow {
   @include shadow();
-}
-
-._animation-zoom {
-  @include zoom();
-}
-
-._animation-spin {
-  @include spin();
-}
-
-._animation-border-rotating {
-  @include border-rotating();
 }
