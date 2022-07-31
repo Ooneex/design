@@ -1,6 +1,6 @@
 import React, {ReactElement, useCallback, useRef, useState} from 'react';
 import {InputType, GetValueParamType} from "./types";
-import "./Input.scss";
+import "./Input.css";
 
 export const Input = ({
     name = "input",

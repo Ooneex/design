@@ -1,5 +1,5 @@
 import React, {ReactElement} from 'react';
-import "./Heading.scss";
+import "./Heading.css";
 
 type PropsType = {
     children: React.ReactNode
