@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Icon.scss";
+import "./Icon.css";
 
 type PropsType = {
     children: React.ReactNode

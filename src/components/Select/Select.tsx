@@ -3,7 +3,7 @@ import {SelectItemType, SelectType} from "./types";
 import {Checkbox} from "../Checkbox/Checkbox";
 import {IconArrowAltDown} from "../Icon/IconArrowAltDown";
 import {CheckboxGetValueParamType} from "../Checkbox/types";
-import "./Select.scss";
+import "./Select.css";
 
 const selectedItems: Record<string, SelectItemType> = {};
 
