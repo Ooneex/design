@@ -1,0 +1,563 @@
+/* --------------------------------
+
+ooneex Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@font-face {
+  font-family: "ooneex";
+  src: url("./ooneex.eot");
+  src: url("./ooneex.eot") format("embedded-opentype"), url("./ooneex.woff2") format("woff2"), url("./ooneex.woff") format("woff"), url("./ooneex.ttf") format("truetype"), url("./ooneex.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*------------------------
+	base class definition
+-------------------------*/
+._ooneex-font-icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 "ooneex";
+  color: inherit;
+  flex-shrink: 0;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+._ooneex-font-icon-is-spinning {
+  animation: _ooneex-font-icon-spin 1s infinite linear;
+}
+
+@keyframes _ooneex-font-icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+._ooneex-font-icon-rotate-90 {
+  transform: rotate(90deg);
+}
+
+._ooneex-font-icon-rotate-180 {
+  transform: rotate(180deg);
+}
+
+._ooneex-font-icon-rotate-270 {
+  transform: rotate(270deg);
+}
+
+._ooneex-font-icon-flip-y {
+  transform: scaleY(-1);
+}
+
+._ooneex-font-icon-flip-x {
+  transform: scaleX(-1);
+}
+
+/*------------------------
+	icons
+-------------------------*/
+._icon-heart-empty::before {
+  content: "\ea02";
+}
+
+._icon-heart::before {
+  content: "\ea03";
+}
+
+._icon-control-panel::before {
+  content: "\ea04";
+}
+
+._icon-calendar::before {
+  content: "\ea05";
+}
+
+._icon-mortgage::before {
+  content: "\ea06";
+}
+
+._icon-security::before {
+  content: "\ea07";
+}
+
+._icon-cheque::before {
+  content: "\ea08";
+}
+
+._icon-bell::before {
+  content: "\ea0b";
+}
+
+._icon-comments::before {
+  content: "\ea0c";
+}
+
+._icon-chat::before {
+  content: "\ea0d";
+}
+
+._icon-contactless-card::before {
+  content: "\ea0e";
+}
+
+._icon-pen::before {
+  content: "\ea0f";
+}
+
+._icon-trash::before {
+  content: "\ea10";
+}
+
+._icon-phone::before {
+  content: "\ea11";
+}
+
+._icon-mail::before {
+  content: "\ea12";
+}
+
+._icon-user-alt::before {
+  content: "\ea13";
+}
+
+._icon-user::before {
+  content: "\ea14";
+}
+
+._icon-pin::before {
+  content: "\ea15";
+}
+
+._icon-search::before {
+  content: "\ea16";
+}
+
+._icon-star::before {
+  content: "\ea17";
+}
+
+._icon-lock::before {
+  content: "\ea18";
+}
+
+._icon-check::before {
+  content: "\ea19";
+}
+
+._icon-edit-curves-alt::before {
+  content: "\ea1a";
+}
+
+._icon-edit-curves::before {
+  content: "\ea1b";
+}
+
+._icon-check-list-alt::before {
+  content: "\ea1d";
+}
+
+._icon-survey::before {
+  content: "\ea1e";
+}
+
+._icon-setup-preferences::before {
+  content: "\ea20";
+}
+
+._icon-system-preferences::before {
+  content: "\ea21";
+}
+
+._icon-hash-mark::before {
+  content: "\ea22";
+}
+
+._icon-list-numbers::before {
+  content: "\ea23";
+}
+
+._icon-microsoft::before {
+  content: "\ea24";
+}
+
+._icon-recipe::before {
+  content: "\ea25";
+}
+
+._icon-gallery-view::before {
+  content: "\ea26";
+}
+
+._icon-contacts::before {
+  content: "\ea27";
+}
+
+._icon-check-list::before {
+  content: "\ea29";
+}
+
+._icon-bullet-list::before {
+  content: "\ea2b";
+}
+
+._icon-menu::before {
+  content: "\ea2c";
+}
+
+._icon-incense::before {
+  content: "\ea2d";
+}
+
+._icon-scented-candle-1::before {
+  content: "\ea2e";
+}
+
+._icon-scented-candle::before {
+  content: "\ea2f";
+}
+
+._icon-missile::before {
+  content: "\ea30";
+}
+
+._icon-offline::before {
+  content: "\ea31";
+}
+
+._icon-copyright::before {
+  content: "\ea32";
+}
+
+._icon-at-sign::before {
+  content: "\ea33";
+}
+
+._icon-shield::before {
+  content: "\ea34";
+}
+
+._icon-verified::before {
+  content: "\ea35";
+}
+
+._icon-password::before {
+  content: "\ea36";
+}
+
+._icon-plug::before {
+  content: "\ea37";
+}
+
+._icon-taoism::before {
+  content: "\ea38";
+}
+
+._icon-note::before {
+  content: "\ea39";
+}
+
+._icon-mobile-chat::before {
+  content: "\ea3c";
+}
+
+._icon-property-location::before {
+  content: "\ea3d";
+}
+
+._icon-property-to-rent::before {
+  content: "\ea3e";
+}
+
+._icon-property-for-sale::before {
+  content: "\ea3f";
+}
+
+._icon-property-sold::before {
+  content: "\ea40";
+}
+
+._icon-bookmarks::before {
+  content: "\ea41";
+}
+
+._icon-energy::before {
+  content: "\ea42";
+}
+
+._icon-recipe-create::before {
+  content: "\ea44";
+}
+
+._icon-dish::before {
+  content: "\ea45";
+}
+
+._icon-cutlery::before {
+  content: "\ea46";
+}
+
+._icon-parking::before {
+  content: "\ea47";
+}
+
+._icon-engine-start::before {
+  content: "\ea48";
+}
+
+._icon-comment-add::before {
+  content: "\ea49";
+}
+
+._icon-enlarge::before {
+  content: "\ea56";
+}
+
+._icon-increase::before {
+  content: "\ea57";
+}
+
+._icon-selfie::before {
+  content: "\ea59";
+}
+
+._icon-arrow-alt-up::before {
+  content: "\ea5a";
+}
+
+._icon-arrow-alt-right::before {
+  content: "\ea5b";
+}
+
+._icon-arrow-alt-left::before {
+  content: "\ea5c";
+}
+
+._icon-arrow-alt-down::before {
+  content: "\ea5d";
+}
+
+._icon-arrow-up::before {
+  content: "\ea5e";
+}
+
+._icon-arrow-right::before {
+  content: "\ea5f";
+}
+
+._icon-arrow-left::before {
+  content: "\ea60";
+}
+
+._icon-arrow-down::before {
+  content: "\ea61";
+}
+
+._icon-eye::before {
+  content: "\ea62";
+}
+
+._icon-eye-off::before {
+  content: "\ea63";
+}
+
+._icon-block::before {
+  content: "\ea78";
+}
+
+._icon-circle::before {
+  content: "\ea79";
+}
+
+._icon-circle-alt::before {
+  content: "\ea7a";
+}
+
+._icon-clock::before {
+  content: "\ea7b";
+}
+
+._icon-currency-dollar::before {
+  content: "\ea7c";
+}
+
+._icon-euro::before {
+  content: "\ea7d";
+}
+
+._icon-temple::before {
+  content: "\ea7e";
+}
+
+._icon-shirt::before {
+  content: "\ea7f";
+}
+
+._icon-photo-size-select-small::before {
+  content: "\ea80";
+}
+
+._icon-bed::before {
+  content: "\ea81";
+}
+
+._icon-cctv::before {
+  content: "\ea82";
+}
+
+._icon-wifi::before {
+  content: "\ea83";
+}
+
+._icon-ventilation::before {
+  content: "\ea84";
+}
+
+._icon-heater::before {
+  content: "\ea85";
+}
+
+._icon-washing-machine::before {
+  content: "\ea86";
+}
+
+._icon-dishwasher::before {
+  content: "\ea87";
+}
+
+._icon-car-parking::before {
+  content: "\ea88";
+}
+
+._icon-sofa::before {
+  content: "\ea89";
+}
+
+._icon-desk-lamp::before {
+  content: "\ea8a";
+}
+
+._icon-lift::before {
+  content: "\ea8b";
+}
+
+._icon-video-player::before {
+  content: "\ea8c";
+}
+
+._icon-shuttle::before {
+  content: "\ea8d";
+}
+
+._icon-train-speed::before {
+  content: "\ea8e";
+}
+
+._icon-train::before {
+  content: "\ea8f";
+}
+
+._icon-bus-front::before {
+  content: "\ea90";
+}
+
+._icon-d-add::before {
+  content: "\ea91";
+}
+
+._icon-insert_link::before {
+  content: "\ea92";
+}
+
+._icon-link_off::before {
+  content: "\ea93";
+}
+
+._icon-window-code::before {
+  content: "\ea94";
+}
+
+._icon-copy-2::before {
+  content: "\ea95";
+}
+
+._icon-bulb-63::before {
+  content: "\ea96";
+}
+
+._icon-warning-sign::before {
+  content: "\ea97";
+}
+
+._icon-logo-github::before {
+  content: "\ea98";
+}
+
+._icon-logo-twitter::before {
+  content: "\ea99";
+}
+
+._icon-discord::before {
+  content: "\ea9a";
+}
+
+@font-face {
+  font-family: open-sans-bold;
+  src: url("OpenSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans-bold-italic;
+  src: url("OpenSans-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans-extra-bold;
+  src: url("OpenSans-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans-extra-bold-italic;
+  src: url("OpenSans-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans-italic;
+  src: url("OpenSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans-light;
+  src: url("OpenSans-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans-light-italic;
+  src: url("OpenSans-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans-medium;
+  src: url("OpenSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans-medium-italic;
+  src: url("OpenSans-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans;
+  src: url("OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans-semi-bold;
+  src: url("OpenSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: open-sans-semi-bold-italic;
+  src: url("OpenSans-SemiBoldItalic.ttf") format("truetype");
+}
+
+/*# sourceMappingURL=index.css.map */
