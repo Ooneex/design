@@ -1,5 +1,5 @@
 import React, {ReactElement} from 'react';
-import "./InfinityLoader.scss";
+import "./InfinityLoader.css";
 
 export const InfinityLoader = (): ReactElement => {
     return (

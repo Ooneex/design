@@ -1,7 +1,7 @@
 import React, {ReactElement} from 'react';
 import {ToggleFilterType} from "./types";
 import {Button} from "../Button/Button";
-import "./ToggleFilter.scss";
+import "./ToggleFilter.css";
 
 export const ToggleFilter = ({filters}: ToggleFilterType): ReactElement => {
     return (

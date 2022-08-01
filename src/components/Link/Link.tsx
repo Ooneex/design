@@ -1,6 +1,6 @@
 import React, {ReactElement} from 'react';
 import {LinkType} from "./types";
-import "./Link.scss";
+import "./Link.css";
 
 export const Link = ({to, ext = false, className, children}: LinkType): ReactElement => {
     return (
