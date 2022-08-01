@@ -42,5 +42,19 @@
 ._ooneex-terminal .header .dot-container .dot-green {
   background-color: #27C841;
 }
+._ooneex-terminal .header .window-code {
+  width: 30px;
+  height: 30px;
+  background-color: #007E33;
+}
+._ooneex-terminal .window-code {
+  height: 30px;
+  background-color: #007E33;
+}
+._ooneex-terminal .window-code .i {
+  background-color: #33cccc;
+  width: 30px;
+  height: 30px;
+}
 
 /*# sourceMappingURL=Terminal.css.map */
