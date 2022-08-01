@@ -1,0 +1,62 @@
+._ooneex-terminal {
+  background-color: #2E3248;
+  width: 1000px;
+  height: 200px;
+  display: block;
+
+  .header {
+
+    width: 1000px;
+    height:50px;
+    background-color: #26293C;
+    color: #B7B7BF;
+    position: relative;
+
+    .title-header{
+      position: absolute;
+      margin-left: 450px;
+      margin-top: 15px;
+    }
+
+    .dot-container{
+      height: 15px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      .dot-red, .dot-yellow, .dot-green {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 8px;
+
+      }
+
+      .dot-red{
+        margin-left: 15px;
+        background-color: #FF5E56;
+      }
+
+      .dot-yellow{
+        background-color: #FEBC2E;
+      }
+
+      .dot-green{
+        background-color: #27C841;
+      }
+    }
+
+
+  }
+
+}
+
+
+
+
+
+

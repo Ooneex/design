@@ -1,0 +1,46 @@
+._ooneex-terminal {
+  background-color: #2E3248;
+  width: 1000px;
+  height: 200px;
+  display: block;
+}
+._ooneex-terminal .header {
+  width: 1000px;
+  height: 50px;
+  background-color: #26293C;
+  color: #B7B7BF;
+  position: relative;
+}
+._ooneex-terminal .header .title-header {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 15px;
+}
+._ooneex-terminal .header .dot-container {
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+._ooneex-terminal .header .dot-container .dot-red, ._ooneex-terminal .header .dot-container .dot-yellow, ._ooneex-terminal .header .dot-container .dot-green {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 8px;
+}
+._ooneex-terminal .header .dot-container .dot-red {
+  margin-left: 15px;
+  background-color: #FF5E56;
+}
+._ooneex-terminal .header .dot-container .dot-yellow {
+  background-color: #FEBC2E;
+}
+._ooneex-terminal .header .dot-container .dot-green {
+  background-color: #27C841;
+}
+
+/*# sourceMappingURL=Terminal.css.map */
