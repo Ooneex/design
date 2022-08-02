@@ -13,6 +13,12 @@
 ._ooneex-font-icon.disabled {
   color: #90909E;
 }
+._ooneex-font-icon.arrow {
+  color: #A88594;
+}
+._ooneex-font-icon.windowcode {
+  color: #C5DB01;
+}
 ._ooneex-font-icon.xs {
   font-size: 18px;
 }

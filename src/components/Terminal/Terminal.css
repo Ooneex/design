@@ -1,7 +1,7 @@
 ._ooneex-terminal {
   background-color: #2E3248;
   width: 1000px;
-  height: 200px;
+  height: 140px;
   display: block;
 }
 ._ooneex-terminal .header {
@@ -12,9 +12,14 @@
   position: relative;
 }
 ._ooneex-terminal .header .title-header {
-  position: absolute;
+  display: inline-block;
   margin-left: 450px;
-  margin-top: 15px;
+  margin-top: 12px;
+}
+._ooneex-terminal .header .title-header .title-text {
+  float: right;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 ._ooneex-terminal .header .dot-container {
   height: 15px;
@@ -42,19 +47,38 @@
 ._ooneex-terminal .header .dot-container .dot-green {
   background-color: #27C841;
 }
-._ooneex-terminal .header .window-code {
-  width: 30px;
-  height: 30px;
-  background-color: #007E33;
+._ooneex-terminal .inside-container {
+  margin-left: 10px;
+  flex-direction: column;
+  display: flex;
+  margin-top: 10px;
 }
-._ooneex-terminal .window-code {
-  height: 30px;
-  background-color: #007E33;
+._ooneex-terminal .inside-container .title-text-second {
+  color: #6576C5;
 }
-._ooneex-terminal .window-code .i {
-  background-color: #33cccc;
-  width: 30px;
-  height: 30px;
+._ooneex-terminal .inside-container .window-code {
+  width: 1000px;
+  height: 22px;
+  margin-top: 5px;
+  display: inline-block;
+}
+._ooneex-terminal .inside-container .window-code .arrow-group {
+  display: inline-block;
+}
+._ooneex-terminal .inside-container .window-code .arrow-group .arrow-toleft {
+  margin-left: -10px;
+}
+._ooneex-terminal .inside-container .window-code .deno-word {
+  color: #C5DB01;
+  margin-right: 5px;
+}
+._ooneex-terminal .inside-container .window-code .ooneex-code {
+  color: #FFFFFF;
+  margin-bottom: 2px;
+}
+._ooneex-terminal .icon-copy {
+  float: right;
+  margin-right: 6px;
 }
 
 /*# sourceMappingURL=Terminal.css.map */

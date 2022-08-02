@@ -20,6 +20,14 @@
     color: $color-disabled;
   }
 
+  &.arrow {
+    color: $color-arrow;
+  }
+
+  &.windowcode {
+    color: $color-windowcode;
+  }
+
   &.xs {
     font-size: 18px;
   }

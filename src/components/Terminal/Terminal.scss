@@ -1,7 +1,7 @@
 ._ooneex-terminal {
   background-color: #2E3248;
   width: 1000px;
-  height: 200px;
+  height: 140px;
   display: block;
 
   .header {
@@ -13,9 +13,19 @@
     position: relative;
 
     .title-header{
-      position: absolute;
+      display: inline-block;
       margin-left: 450px;
-      margin-top: 15px;
+      margin-top: 12px;
+
+      .icon-terminal{
+
+      }
+
+      .title-text{
+        float: right;
+        margin-left: 10px;
+        margin-top: 5px;
+      }
     }
 
     .dot-container{
@@ -49,23 +59,49 @@
         background-color: #27C841;
       }
     }
-.window-code{
-  width: 30px;
-  height: 30px;
-  background-color: #007E33;
-}
-
 
   }
-  .window-code{
-    height: 30px;
-    background-color: #007E33;
+  .inside-container{
+    margin-left: 10px;
+    flex-direction: column;
+    display: flex;
+    margin-top: 10px;
 
-    .i{
-      background-color: #33cccc;
-      width: 30px;
-      height: 30px;
+    .title-text-second{
+      color: #6576C5;
     }
+
+  .window-code{
+  width: 1000px;
+    height: 22px;
+    margin-top: 5px;
+    display: inline-block;
+
+    .arrow-group{
+      display: inline-block;
+
+      .arrow-toleft{
+        margin-left: -10px;
+      }
+    }
+
+    .deno-word{
+      color: #C5DB01;
+      margin-right: 5px;
+    }
+
+
+    .ooneex-code{
+      color: #FFFFFF;
+      margin-bottom: 2px;
+
+    }
+  }
+
+  }
+  .icon-copy{
+    float: right;
+    margin-right: 6px;
 
   }
 
