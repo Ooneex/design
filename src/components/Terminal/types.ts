@@ -1,4 +1,4 @@
 export type TerminalType = {
- code: string
-
- }
+ title: string;
+ code: string;
+}

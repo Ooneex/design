@@ -1,53 +1,37 @@
+@import "../../styles/mixins/border-radius";
+
 ._ooneex-terminal {
   background-color: #2E3248;
-  width: 1000px;
-  height: 140px;
-  display: block;
+  @include border-radius();
+  position: relative;
 
   .header {
-
-    width: 1000px;
-    height:50px;
     background-color: #26293C;
     color: #B7B7BF;
-    position: relative;
+    padding: 10px 10px 10px 15px;
+    @include border-radius(5px, 5px, 0, 0);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
 
-    .title-header{
-      display: inline-block;
-      margin-left: 450px;
-      margin-top: 12px;
-
-      .icon-terminal{
-
-      }
-
-      .title-text{
-        float: right;
-        margin-left: 10px;
-        margin-top: 5px;
+    .box {
+      width: 61px;
+      &:last-child {
+        width: 100%;
+        text-align: center;
       }
     }
 
-    .dot-container{
-      height: 15px;
-      display: inline-block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-
+    .dot-container {
       .dot-red, .dot-yellow, .dot-green {
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
         border-radius: 50%;
         display: inline-block;
-        margin-left: 8px;
-
+        margin-right: 8px;
       }
 
       .dot-red{
-        margin-left: 15px;
         background-color: #FF5E56;
       }
 
@@ -57,61 +41,65 @@
 
       .dot-green{
         background-color: #27C841;
+        margin-right: 0;
       }
     }
 
-  }
-  .inside-container{
-    margin-left: 10px;
-    flex-direction: column;
-    display: flex;
-    margin-top: 10px;
+    .title {
 
-    .title-text-second{
+      i {
+        vertical-align: middle;
+        color: #C5DB01;
+      }
+
+      .label {
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .content {
+    padding: 15px;
+
+    .label {
       color: #6576C5;
     }
 
-  .window-code{
-  width: 1000px;
-    height: 22px;
-    margin-top: 5px;
-    display: inline-block;
+    .command {
+      display: block;
+      color: #FFFFFF;
 
-    .arrow-group{
-      display: inline-block;
+      i, span {
+        display: inline-block;
+        vertical-align: middle;
+      }
 
-      .arrow-toleft{
-        margin-left: -10px;
+      i {
+        color: #A88594;
+        margin-left: -8px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      span {
+        .bin {
+          color: #C5DB01;
+          margin-right: 5px;
+        }
       }
     }
 
-    .deno-word{
-      color: #C5DB01;
-      margin-right: 5px;
-    }
-
-
-    .ooneex-code{
-      color: #FFFFFF;
-      margin-bottom: 2px;
-
-    }
   }
 
-  }
-  .icon-copy{
-    float: right;
-    margin-right: 6px;
-
-  }
-
-
-  &.arrow {
-    //color: $color-arrow;
-  }
-
-  &.windowcode {
-    //color: $color-windowcode;
+  .copy {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    cursor: pointer;
   }
 }
 
