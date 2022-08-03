@@ -1,0 +1,84 @@
+._ooneex-terminal {
+  background-color: #2E3248;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+}
+._ooneex-terminal .header {
+  background-color: #26293C;
+  color: #B7B7BF;
+  padding: 10px 10px 10px 15px;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+._ooneex-terminal .header .box {
+  width: 61px;
+}
+._ooneex-terminal .header .box:last-child {
+  width: 100%;
+  text-align: center;
+}
+._ooneex-terminal .header .dot-container .dot-red, ._ooneex-terminal .header .dot-container .dot-yellow, ._ooneex-terminal .header .dot-container .dot-green {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+._ooneex-terminal .header .dot-container .dot-red {
+  background-color: #FF5E56;
+}
+._ooneex-terminal .header .dot-container .dot-yellow {
+  background-color: #FEBC2E;
+}
+._ooneex-terminal .header .dot-container .dot-green {
+  background-color: #27C841;
+  margin-right: 0;
+}
+._ooneex-terminal .header .title i {
+  vertical-align: middle;
+  color: #C5DB01;
+}
+._ooneex-terminal .header .title .label {
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+._ooneex-terminal .content {
+  padding: 15px;
+}
+._ooneex-terminal .content .label {
+  color: #6576C5;
+}
+._ooneex-terminal .content .command {
+  display: block;
+  color: #FFFFFF;
+}
+._ooneex-terminal .content .command i, ._ooneex-terminal .content .command span {
+  display: inline-block;
+  vertical-align: middle;
+}
+._ooneex-terminal .content .command i {
+  color: #A88594;
+  margin-left: -8px;
+}
+._ooneex-terminal .content .command i:first-child {
+  margin-left: 0;
+}
+._ooneex-terminal .content .command span .bin {
+  color: #C5DB01;
+  margin-right: 5px;
+}
+._ooneex-terminal .copy {
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Terminal.css.map */
