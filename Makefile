@@ -6,8 +6,6 @@ up: start
 down: stop
 start:
 	npm start
-styles:
-	$(COMPOSE) run ooneex-design sass --watch ./
 stop:
 	$(COMPOSE) down -v --remove-orphans || true
 logs:
