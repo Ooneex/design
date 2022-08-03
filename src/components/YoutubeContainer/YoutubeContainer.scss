@@ -1,0 +1,36 @@
+@import "../../styles/mixins/border-radius";
+
+._ooneex-youtubecontainer{
+  padding: 15px;
+  display: flex;
+  border: 2px solid red;
+  @include border-radius();
+  background-color: #FFFFFF;
+  min-height: 50px;
+
+  .square{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    @include border-radius();
+    position: absolute;
+
+    i {
+      margin-left: 13px;
+      margin-top: 13px;
+
+   }
+
+  }
+  .text{
+    margin-left: 60px;
+    padding: 5px;
+    height: auto;
+
+    .link{
+      color: #00909E;
+    }
+
+  }
+
+}
