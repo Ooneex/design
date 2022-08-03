@@ -1,10 +1,9 @@
 import {TerminalType} from "./types";
 import "./Terminal.css";
 import * as React from 'react';
-import {IconWindowCode} from "../Icon/IconWindowCode";
-import {Spacer} from "../Spacer/Spacer";
+import {IconTerminal} from "../Icon/IconTerminal";
 import {IconArrowAltRight} from "../Icon/IconArrowAltRight";
-import {IconCopy2} from "../Icon/IconCopy2";
+import {IconCopy} from "../Icon/IconCopy";
 
 export const Terminal= ({code}: TerminalType) => {
 
@@ -17,7 +16,7 @@ export const Terminal= ({code}: TerminalType) => {
                     <span className={"dot-green"}/>
                 </span>
                 <div className={"title-header"}>
-                    <span className={"icon-terminal"}><IconWindowCode  variant={"windowcode"} size={"md"}/></span>
+                    <span className={"icon-terminal"}><IconTerminal variant={"windowcode"} size={"md"}/></span>
                   <span className={"title-text"}>~/my/projects</span>
                 </div>
             </div>
@@ -32,7 +31,7 @@ export const Terminal= ({code}: TerminalType) => {
                 <span className={"ooneex-code"}><span className={"deno-word"}>deno</span><code>task project:build</code></span>
             </span>
             </div>
-            <span className={"icon-copy"}><IconCopy2  size={"md"} variant={"disabled"}></IconCopy2></span>
+            <span className={"icon-copy"}><IconCopy size={"md"} variant={"disabled"}></IconCopy></span>
         </div>
 
     )
