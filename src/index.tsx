@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {Terminal} from "./components/Terminal/Terminal";
 import "./index.scss";
-import {YoutubeContainer} from "./components/YoutubeContainer/YoutubeContainer";
-import {WarningContainer} from "./components/WarningContainer/WarningContainer";
+import {IdeaContainer} from "./components/IdeaContainer/IdeaContainer";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <div className={"app"}>
-        <WarningContainer text={"bk"}/>
+       <IdeaContainer text={"bik"}/>
     </div>
   </React.StrictMode>
 );

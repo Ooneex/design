@@ -1,0 +1,33 @@
+._ooneex-ideacontainer {
+  padding: 15px;
+  display: flex;
+  border: 2px solid #3FC57D;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #FFFFFF;
+  min-height: 50px;
+}
+._ooneex-ideacontainer .square {
+  height: 50px;
+  width: 50px;
+  background-color: #3FC57D;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  position: absolute;
+}
+._ooneex-ideacontainer .square i {
+  margin-left: 13px;
+  margin-top: 13px;
+}
+._ooneex-ideacontainer .text {
+  margin-left: 60px;
+  padding: 5px;
+  height: auto;
+}
+._ooneex-ideacontainer .text .link {
+  color: #00909E;
+}
+
+/*# sourceMappingURL=IdeaContainer.css.map */
