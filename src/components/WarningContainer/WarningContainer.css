@@ -1,0 +1,33 @@
+._ooneex-warningcontainer {
+  padding: 15px;
+  display: flex;
+  border: 2px solid #EAB306;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #FFFFFF;
+  min-height: 50px;
+}
+._ooneex-warningcontainer .square {
+  height: 50px;
+  width: 50px;
+  background-color: #EAB306;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  position: absolute;
+}
+._ooneex-warningcontainer .square i {
+  margin-left: 13px;
+  margin-top: 13px;
+}
+._ooneex-warningcontainer .text {
+  margin-left: 60px;
+  padding: 5px;
+  height: auto;
+}
+._ooneex-warningcontainer .text .link {
+  color: #00909E;
+}
+
+/*# sourceMappingURL=WarningContainer.css.map */
