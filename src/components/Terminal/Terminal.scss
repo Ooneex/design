@@ -1,0 +1,110 @@
+@import "../../styles/mixins/border-radius";
+
+._ooneex-terminal {
+  background-color: #2E3248;
+  @include border-radius();
+  position: relative;
+
+  .header {
+    background-color: #26293C;
+    color: #B7B7BF;
+    padding: 10px 10px 10px 15px;
+    @include border-radius(5px, 5px, 0, 0);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    .box {
+      width: 61px;
+      &:last-child {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .dot-container {
+      .dot-red, .dot-yellow, .dot-green {
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      .dot-red{
+        background-color: #FF5E56;
+      }
+
+      .dot-yellow{
+        background-color: #FEBC2E;
+      }
+
+      .dot-green{
+        background-color: #27C841;
+        margin-right: 0;
+      }
+    }
+
+    .title {
+
+      i {
+        vertical-align: middle;
+        color: #C5DB01;
+      }
+
+      .label {
+        margin-left: 5px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .content {
+    padding: 15px;
+
+    .label {
+      color: #6576C5;
+    }
+
+    .command {
+      display: block;
+      color: #FFFFFF;
+
+      i, span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      i {
+        color: #A88594;
+        margin-left: -8px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      span {
+        .bin {
+          color: #C5DB01;
+          margin-right: 5px;
+        }
+      }
+    }
+
+  }
+
+  .copy {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+

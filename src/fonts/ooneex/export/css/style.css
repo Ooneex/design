@@ -583,3 +583,42 @@ icons
   content: "\ea90";
 }
 
+._icon-d-add::before {
+  content: "\ea91";
+}
+
+._icon-insert_link::before {
+  content: "\ea92";
+}
+
+._icon-link_off::before {
+  content: "\ea93";
+}
+
+._icon-window-code::before {
+  content: "\ea94";
+}
+
+._icon-copy-2::before {
+  content: "\ea95";
+}
+
+._icon-bulb-63::before {
+  content: "\ea96";
+}
+
+._icon-warning-sign::before {
+  content: "\ea97";
+}
+
+._icon-logo-github::before {
+  content: "\ea98";
+}
+
+._icon-logo-twitter::before {
+  content: "\ea99";
+}
+
+._icon-discord::before {
+  content: "\ea9a";
+}
