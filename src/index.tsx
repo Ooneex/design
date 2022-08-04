@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {Terminal} from "./components/Terminal/Terminal";
 import "./index.scss";
-import {IdeaContainer} from "./components/IdeaContainer/IdeaContainer";
+import {Highlight} from "./components/Highlight/Highlight";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,7 +10,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <div className={"app"}>
-       <IdeaContainer text={"bik"}/>
+        <Highlight type={"warning"}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi impedit quis unde. Aliquam aliquid excepturi, natus odio porro quidem ut?
+        </Highlight>
     </div>
   </React.StrictMode>
 );

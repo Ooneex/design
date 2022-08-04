@@ -1,0 +1,50 @@
+._ooneex-highlight {
+  padding: 15px;
+  display: flex;
+  border: 2px solid;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #FFFFFF;
+  min-height: 50px;
+}
+._ooneex-highlight .square {
+  height: 50px;
+  width: 50px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  position: absolute;
+}
+._ooneex-highlight .square i {
+  margin-left: 13px;
+  margin-top: 13px;
+}
+._ooneex-highlight.youtube {
+  border-color: #FF0200;
+}
+._ooneex-highlight.youtube .square {
+  background-color: #FF0200;
+}
+._ooneex-highlight.idea {
+  border-color: #3FC57D;
+}
+._ooneex-highlight.idea .square {
+  background-color: #3FC57D;
+}
+._ooneex-highlight.warning {
+  border-color: #EAB306;
+}
+._ooneex-highlight.warning .square {
+  background-color: #EAB306;
+}
+._ooneex-highlight .text {
+  margin-left: 60px;
+  padding: 5px;
+  height: auto;
+}
+._ooneex-highlight .text .link {
+  color: #00909E;
+}
+
+/*# sourceMappingURL=Highlight.css.map */
