@@ -2,7 +2,7 @@ import React, {ReactElement} from 'react';
 import {LogoType} from "./types";
 import logo from "./logo.svg";
 import logoFit from "./logo-fit.svg";
-import "./Logo.css";
+import "./Logo.scss";
 
 export const Logo = ({variant = "primary", type = "square", size = "normal", fit = false}: LogoType): ReactElement => {
     return (

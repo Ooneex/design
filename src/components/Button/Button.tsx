@@ -1,6 +1,6 @@
 import React, {ReactElement, useCallback} from 'react';
 import {ButtonType} from "./types";
-import "./Button.css";
+import "./Button.scss";
 import {Spacer} from "../Spacer/Spacer";
 import {IconCircleAnim} from "../Icon/IconCircleAnim";
 

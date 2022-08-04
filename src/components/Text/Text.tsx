@@ -1,6 +1,6 @@
 import React, {ReactElement} from 'react';
 import {TextType} from "./types";
-import "./Text.css";
+import "./Text.scss";
 
 export const Text = ({variant, className, children, size = "normal", element = "p"}: TextType): ReactElement => {
     return (
