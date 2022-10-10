@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {Terminal} from "./components/Terminal/Terminal";
 import "./index.scss";
+import {Button} from "./components/Button/Button";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <div className={"app"}>
-        <Terminal code={"deno task run"} title={"~/documents"} />
+        <Button onClick={() => console.log('click')} variant={"primary"}>Loading...</Button>
     </div>
   </React.StrictMode>
 );

@@ -1,7 +1,7 @@
 import React, {ReactElement, useCallback, useRef, useState} from 'react';
 import {CheckboxType, CheckboxGetValueParamType} from "./types";
 import {IconCheck} from "../Icon/IconCheck";
-import "./Checkbox.css";
+import "./Checkbox.scss";
 
 export const Checkbox = ({
     name = "checkbox",

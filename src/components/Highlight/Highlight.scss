@@ -1,0 +1,53 @@
+@import "../../styles/mixins/border-radius";
+
+._ooneex-highlight{
+  padding: 15px;
+  display: flex;
+  border: 2px solid;
+  @include border-radius();
+  background-color: #FFFFFF;
+  min-height: 50px;
+
+  .square {
+    height: 50px;
+    width: 50px;
+    @include border-radius();
+    position: absolute;
+
+    i {
+      margin-left: 13px;
+      margin-top: 13px;
+    }
+  }
+
+  &.youtube {
+    border-color: #FF0200;
+    .square {
+      background-color: #FF0200;
+    }
+  }
+
+  &.idea {
+    border-color: #3FC57D;
+    .square {
+      background-color: #3FC57D;
+    }
+  }
+
+  &.warning {
+    border-color: #EAB306;
+    .square {
+      background-color: #EAB306;
+    }
+  }
+
+  .text {
+    margin-left: 60px;
+    padding: 5px;
+    height: auto;
+
+    .link{
+      color: #00909E;
+    }
+  }
+}

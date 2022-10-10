@@ -1,6 +1,6 @@
 import React, {ReactElement} from 'react';
 import {SpacerType} from "./types";
-import "./Spacer.css";
+import "./Spacer.scss";
 
 export const Spacer = ({size = "md", inline = false}: SpacerType): ReactElement => {
     return (

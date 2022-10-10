@@ -1,9 +1,9 @@
 import React, {ReactElement} from 'react';
 import {LinkType} from "./types";
-import "./Link.css";
+import "./Link.scss";
 
-export const Link = ({to, ext = false, className, children}: LinkType): ReactElement => {
+export const Link = ({to, className, children, target = "blank"}: LinkType): ReactElement => {
     return (
-        <a href={to} className={"_ooneex-link _f-f-italic" + (className ? " " + className : "")}>{children}</a>
+        <a target={"_" + target} href={to} className={"_ooneex-link " + (className ? " " + className : "")}>{children}</a>
     );
 };

@@ -30,7 +30,7 @@ export const Terminal= ({title, code}: TerminalType) => {
                     <span className={"title"}>
                     <IconTerminal size={"xxs"}/>
                     <span className={"label"}>{title}</span>
-                </span>
+                    </span>
                 </div>
             </div>
             <div className={"content"}>

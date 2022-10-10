@@ -1,7 +1,7 @@
 import React, {ReactElement} from 'react';
 import {ToggleFilterType} from "./types";
 import {Button} from "../Button/Button";
-import "./ToggleFilter.css";
+import "./ToggleFilter.scss";
 
 export const ToggleFilter = ({filters}: ToggleFilterType): ReactElement => {
     return (
@@ -9,9 +9,10 @@ export const ToggleFilter = ({filters}: ToggleFilterType): ReactElement => {
             {
                 filters.map((filter, key) => {
                     return (
-                        <Button className={" item" + (filter.isActive ? " active" : "")} key={key} outline={!filter.isActive}>
-                            {filter.label}
-                        </Button>
+                        // <Button className={" item" + (filter.isActive ? " active" : "")} key={key} outline={!filter.isActive}>
+                        //     {filter.label}
+                        // </Button>
+											<p>re</p>
                     )
                 })
             }
