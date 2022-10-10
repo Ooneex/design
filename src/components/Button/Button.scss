@@ -1,76 +1,194 @@
 @import "../../styles/color";
-@import "../../styles/mixins/transition";
 
-._ooneex-button {
-  border: none;
-  outline: none;
-  background-color: $color-primary;
-  padding: 0 20px;
-  min-height: 45px;
-  color: $color-white;
-  font-size: 1.1em;
-  cursor: pointer;
-  display: inline-block;
-  @include transition();
+$animation: 1s linear infinite;
 
-  .wrapper {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-  }
+._ooneex:is(._button) {
+	display: inline-block;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'open-sans', sans-serif;
+	color: var(--ooneex-color-white);
+	text-align: center;
+	font-weight: 400;
+	line-height: 1.5;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-appearance: button;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.375rem 1rem;
+	font-size: 1.1rem;
+	border-radius: 0;
+	text-transform: none;
+	transition: filter .15s ease-in-out;
+	position: relative;
+	overflow: hidden;
+	min-width: 150px;
 
-  i {
-    font-size: 18px !important;
-    color: $color-white !important;
-  }
+	&._primary {
+		background-color: var(--ooneex-color-primary);
+		border-color: var(--ooneex-color-primary);
+	}
 
-  .text {
-    width: 100%;
-    text-align: center;
-  }
+	&._secondary {
+		background-color: var(--ooneex-color-secondary);
+		border-color: var(--ooneex-color-secondary);
+	}
 
-  &:hover {
-    background-color: $color-primary-alt;
-  }
+	&._text {
+		background-color: var(--ooneex-color-text);
+		border-color: var(--ooneex-color-text);
+	}
 
-  &.outline {
-    background-color: $color-white;
-    border: 2px solid $color-primary;
-    color: $color-primary;
+	&._grey {
+		background-color: var(--ooneex-color-grey);
+		border-color: var(--ooneex-color-grey);
+	}
 
-    &:hover {
-      background-color: $color-primary;
-      color: $color-white;
-    }
-  }
+	&._white {
+		color: var(--ooneex-color-text);
+		background-color: var(--ooneex-color-white);
+		border-color: var(--ooneex-color-white);
+	}
 
-  &.secondary {
-    background-color: $color-secondary;
+	&._success {
+		background-color: var(--ooneex-color-success);
+		border-color: var(--ooneex-color-success);
+	}
 
-    &:hover {
-      background-color: #855D43;
-    }
+	&._warning {
+		background-color: var(--ooneex-color-warning);
+		border-color: var(--ooneex-color-warning);
+	}
 
-    &.outline {
-      background-color: $color-white;
-      border: 2px solid $color-secondary;
-      color: $color-secondary;
+	&._info {
+		background-color: var(--ooneex-color-info);
+		border-color: var(--ooneex-color-info);
+	}
 
-      &:hover {
-        background-color: $color-secondary;
-        color: $color-white;
-      }
-    }
-  }
+	&._error {
+		background-color: var(--ooneex-color-error);
+		border-color: var(--ooneex-color-error);
+	}
 
-  &:disabled {
-    border: none;
-    color: $color-white;
-    background-color: $color-disabled;
-    cursor: default;
+	&._loading {
+		._rotate {
+			position: absolute;
+			display: block;
 
-    &:hover {
-      background-color: $color-disabled;
-    }
-  }
+			&:nth-child(1) {
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: linear-gradient(90deg, transparent, var(--ooneex-color-white));
+				animation: rotate1 1s linear infinite;
+			}
+
+			&:nth-child(2) {
+				top: -100%;
+				right: 0;
+				width: 2px;
+				height: 100%;
+				background: linear-gradient(180deg, transparent, var(--ooneex-color-white));
+				animation: rotate2 1s linear infinite;
+				animation-delay: 0.25s;
+			}
+
+			&:nth-child(3) {
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 2px;
+				background: linear-gradient(270deg, transparent, var(--ooneex-color-white));
+				animation: rotate3 1s linear infinite;
+				animation-delay: 0.50s;
+			}
+
+			&:nth-child(4) {
+				bottom: -100%;
+				left: 0;
+				width: 2px;
+				height: 100%;
+				background: linear-gradient(360deg, transparent, var(--ooneex-color-white));
+				animation: rotate4 1s linear infinite;
+				animation-delay: 0.75s;
+			}
+		}
+	}
+
+	&:hover {
+		filter: brightness(0.85);
+	}
+
+	._ripple {
+		position: absolute;
+		background-color: var(--ooneex-color-white);
+		transform: translate(-50%, -50%);
+		pointer-events: none;
+		border-radius: 50%;
+		animation: ripple $animation;
+	}
+
+	// Todo: Outline
+
+	&:disabled {
+		cursor: default;
+		opacity: 0.65;
+		&:hover {
+			filter: brightness(1);
+		}
+	}
+}
+
+@keyframes ripple {
+	0% {
+		width: 0;
+		height: 0;
+		opacity: 0.4;
+	}
+	100% {
+		width: 500px;
+		height: 500px;
+		opacity: 0;
+	}
+}
+
+@keyframes rotate1 {
+	0% {
+		left: -100%;
+	}
+	50%, 100% {
+		left: 100%;
+	}
+}
+
+@keyframes rotate2 {
+	0% {
+		top: -100%;
+	}
+	50%, 100% {
+		top: 100%;
+	}
+}
+
+@keyframes rotate3 {
+	0% {
+		right: -100%;
+	}
+	50%, 100% {
+		right: 100%;
+	}
+}
+
+@keyframes rotate4 {
+	0% {
+		bottom: -100%;
+	}
+	50%, 100% {
+		bottom: 100%;
+	}
 }

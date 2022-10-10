@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "./index.scss";
-import {Highlight} from "./components/Highlight/Highlight";
+import {Button} from "./components/Button/Button";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,9 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <div className={"app"}>
-        <Highlight type={"warning"}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi impedit quis unde. Aliquam aliquid excepturi, natus odio porro quidem ut?
-        </Highlight>
+        <Button onClick={() => console.log('click')} variant={"primary"}>Loading...</Button>
     </div>
   </React.StrictMode>
 );

@@ -1,56 +1,64 @@
-import React, {ReactElement, useCallback} from 'react';
-import {ButtonType} from "./types";
+import React, {ReactElement, useCallback, useRef} from "react";
+import { ButtonType } from "./types";
 import "./Button.scss";
-import {Spacer} from "../Spacer/Spacer";
-import {IconCircleAnim} from "../Icon/IconCircleAnim";
+
+// Todo: Outline
 
 export const Button = ({
-   name = "button",
-   variant = "primary",
-   iconLeft,
-   iconRight,
-   className,
-   onClick,
-   children,
-   disabled = false,
-   isLoading = false,
-   outline = false,
+	name = "ooneexButton",
+	variant = "primary",
+	disabled = false,
+	loading = false,
+	onClick,
+	className,
+	children
 }: ButtonType): ReactElement => {
-    const key: string = "input-" + crypto.randomUUID();
 
-    const handler = useCallback(() => {
-        if (onClick) {
-            onClick({name, key});
-        }
-    }, [name, key, onClick]);
+	const button = useRef(null);
 
-    if (isLoading) {
-        iconLeft = <IconCircleAnim />;
-        disabled = true;
-    }
+	const onClickCallback = useCallback((e: React.MouseEvent) => {
+		if (disabled) {
+			return;
+		}
 
-    let beforeText = null;
-    if (iconLeft) {
-        beforeText = <>{iconLeft}<Spacer inline={true} size={"xs"} /></>
-    }
+		// @ts-ignore
+		let x = e.clientX - button.current.offsetLeft;
+		// @ts-ignore
+		let y = e.clientY - button.current.offsetTop;
 
-    let afterText = null;
-    if (iconRight) {
-        afterText = <><Spacer inline={true} size={"xs"} />{iconRight}</>
-    }
+		let ripple = document.createElement("span");
+		ripple.style.left = x + "px";
+		ripple.style.top = y + "px";
+		ripple.className = "_ripple";
+		// @ts-ignore
+		button.current.appendChild(ripple);
 
-    return (
-        <button
-            name={name}
-            onClick={handler}
-            disabled={disabled}
-            className={"_ooneex-button " + variant + (iconLeft ? " icon-left":"") + (iconRight ? " icon-right":"") + (className ? " " + className:"") + (outline ? " outline":"")}
-        >
-            <span className={"wrapper"}>
-                {beforeText}
-                <span className={"_f-f text"}>{children}</span>
-                {afterText}
-            </span>
-        </button>
-    );
+		if (onClick) {
+			onClick(e);
+		}
+
+		setTimeout(() => {
+			ripple.remove();
+		}, 1000);
+	}, [disabled, onClick]);
+
+	return (
+		<button
+			ref={button}
+			name={name}
+			className={"_ooneex _button _" + variant + (loading ? " _loading" : "") + (className ? " " + className : "")}
+			disabled={loading || disabled}
+			onClick={onClickCallback}
+		>
+			{loading ? (
+				<>
+					<span className={"_rotate"} />
+					<span className={"_rotate"} />
+					<span className={"_rotate"} />
+					<span className={"_rotate"} />
+				</>
+			) : null}
+			{children}
+		</button>
+	);
 };

@@ -1,4 +1,4 @@
-@import "variables";
+$transition-time: 0.3s;
 
 @mixin transition($property: all, $time: $transition-time){
   -webkit-transition: $property $time;
