@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
 	},
-	"importMap": "./imports.json",
 	"lint": {
 		"rules": {
 			"tags": ["recommended"],
