@@ -1,5 +1,5 @@
 import React, { ReactElement, useCallback, useRef } from "react";
-import { ButtonType } from "./types";
+import { ButtonType } from "../types";
 import "./Button.scss";
 
 export const Button = ({

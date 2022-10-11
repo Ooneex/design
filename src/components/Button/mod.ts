@@ -1,2 +1,2 @@
-export * from "./Button";
+export * from "./Default/Button";
 export * from "./types";

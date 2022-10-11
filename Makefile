@@ -5,7 +5,7 @@ COMPOSE = docker-compose
 up: start
 down: stop
 start:
-	npm start
+	npm run storybook
 stop:
 	$(COMPOSE) down -v --remove-orphans || true
 logs:
