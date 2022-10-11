@@ -32,7 +32,7 @@ export * from "./IconPencil";
 export * from "./IconPhone";
 export * from "./IconSearch";
 export * from "./IconStar";
-export * from "./IconGitHub"
+export * from "./IconGitHub";
 export * from "./IconTrash";
 export * from "./IconUser";
 export * from "./IconUserAlt";

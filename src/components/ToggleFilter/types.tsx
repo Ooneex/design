@@ -1,9 +1,9 @@
 export type ToggleFilterElementType = {
-    name?: string,
-    label: string,
-    isActive: boolean
+	name?: string;
+	label: string;
+	isActive: boolean;
 };
 
 export type ToggleFilterType = {
-    filters: ToggleFilterElementType[],
+	filters: ToggleFilterElementType[];
 };

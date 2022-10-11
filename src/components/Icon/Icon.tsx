@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import "./Icon.scss";
 
 type PropsType = {
-    children: React.ReactNode
+	children: React.ReactNode;
 };
 
-export const Icon = ({children}: PropsType) => <>{children}</>;
+export const Icon = ({ children }: PropsType) => <>{children}</>;

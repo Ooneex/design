@@ -1,19 +1,17 @@
-import React, {ReactElement, useCallback, useRef} from "react";
+import React, { ReactElement, useCallback, useRef } from "react";
 import { ButtonType } from "./types";
 import "./Button.scss";
-
-// Todo: Outline
 
 export const Button = ({
 	name = "ooneexButton",
 	variant = "primary",
+	outline = false,
 	disabled = false,
 	loading = false,
 	onClick,
 	className,
-	children
+	children,
 }: ButtonType): ReactElement => {
-
 	const button = useRef(null);
 
 	const onClickCallback = useCallback((e: React.MouseEvent) => {
@@ -21,16 +19,16 @@ export const Button = ({
 			return;
 		}
 
-		// @ts-ignore
-		let x = e.clientX - button.current.offsetLeft;
-		// @ts-ignore
-		let y = e.clientY - button.current.offsetTop;
+		// @ts-ignore: trust me
+		const x = e.clientX - button.current.offsetLeft;
+		// @ts-ignore: trust me
+		const y = e.clientY - button.current.offsetTop;
 
-		let ripple = document.createElement("span");
+		const ripple = document.createElement("span");
 		ripple.style.left = x + "px";
 		ripple.style.top = y + "px";
 		ripple.className = "_ripple";
-		// @ts-ignore
+		// @ts-ignore: trust me
 		button.current.appendChild(ripple);
 
 		if (onClick) {
@@ -46,18 +44,23 @@ export const Button = ({
 		<button
 			ref={button}
 			name={name}
-			className={"_ooneex _button _" + variant + (loading ? " _loading" : "") + (className ? " " + className : "")}
+			className={"_ooneex _button _" +
+				variant + (loading ? " _loading" : "") +
+				(loading ? " _loading" : "") +
+				(className ? " " + className : "")}
 			disabled={loading || disabled}
 			onClick={onClickCallback}
 		>
-			{loading ? (
-				<>
-					<span className={"_rotate"} />
-					<span className={"_rotate"} />
-					<span className={"_rotate"} />
-					<span className={"_rotate"} />
-				</>
-			) : null}
+			{loading
+				? (
+					<>
+						<span className={"_rotate"} />
+						<span className={"_rotate"} />
+						<span className={"_rotate"} />
+						<span className={"_rotate"} />
+					</>
+				)
+				: null}
 			{children}
 		</button>
 	);

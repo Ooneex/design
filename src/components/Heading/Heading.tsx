@@ -1,14 +1,14 @@
-import React, {ReactElement} from 'react';
+import React, { ReactElement } from "react";
 import "./Heading.scss";
 
 type PropsType = {
-    children: React.ReactNode
-}
+	children: React.ReactNode;
+};
 
-export const Heading = ({children}: PropsType): ReactElement => {
-    return (
-        <>
-            {children}
-        </>
-    );
+export const Heading = ({ children }: PropsType): ReactElement => {
+	return (
+		<>
+			{children}
+		</>
+	);
 };
